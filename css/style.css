@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,600|Poppins&display=swap');
+
+body {
+  /*font-family: 'Josefin Sans', sans-serif;*/
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar--main {
+	background-color: white !important;
+  z-index: 1;
+}
+
+.text--theme {
+	color: #F9F0ED;
+}
+
+.intro-banner {
+  position: relative;
+  background-image: linear-gradient(to right bottom, #719BA9, #587180, #2B3C4F);
+  width: 100%;
+  height: 760px;
+  text-align: center;
+  z-index: 0;
+  transform: skewY(-6deg);
+  transform-origin: 0;
+}
+
+.intro-banner .container-fluid {
+  transform: skewY(6deg);
+  position: relative;
+  padding-top: 180px;
+  /*padding-top: 150px;*/
+	color: #F9F0ED;
+}
+
+.intro-banner h1,
+.intro-banner h3,
+.about-me h2 {
+	font-family: 'Josefin Sans', sans-serif;
+	text-transform: uppercase;
+  font-weight: 600;
+}
+
+.intro-banner h3 {
+
+}
+
+.intro-banner .dev-image {
+  width: 600px;
+  margin-top: 50px;
+}
+
+
+.intro-banner .profile-pic--holder {
+	margin-bottom: 24px;
+} 
+
+.intro-banner hr {
+	width: 100px;
+	border-color: rgba(255, 255, 255, 0.17);
+}
+
+.about-me h2 {
+  color: #587180;
+}
+
+.about-me { 
+  padding-top: 150px;
+  padding-bottom: 80px;
+}
+
+.about-me p.description {
+  font-size: 18px;
+  color: #587180;
+}
+
+.about-me .blockquote {
+  color: #719BA9;
+}
+
+.about-me .blockquote-footer {
+  color: inherit;
+  opacity: 0.8;
+}
+
+.hire {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/** Small devices (landscape phones, 576px and up) **/
+@media (min-width: 576px) {
+
+}
+
+/** Medium devices (tablets, 768px and up) **/
+@media (min-width: 768px) {
+	.navbar--main {
+  	padding: .5rem 4rem;
+  }
+}
+
+/** Large devices (desktops, 992px and up) **/
+@media (min-width: 992px) {
+
+}
+
+/** Extra large devices (large desktops, 1200px and up) **/
+@media (min-width: 1200px) {
+
+}
