@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,600|Poppins:400,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700|Poppins:400,600&display=swap');
 
 body {
   /*font-family: 'Josefin Sans', sans-serif;*/
@@ -6,6 +6,21 @@ body {
 }
 
 b, strong {
+  font-weight: 600;
+}
+
+.title {
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 95%;
+  margin-bottom: 15px;
+  margin-top: -2px;
   font-weight: 600;
 }
 
@@ -33,7 +48,7 @@ b, strong {
   height: 2.5rem;
   width: 2.5rem;
   line-height: 2.5rem;
-  padding: 0px;
+  padding: 0px !important;
   border-radius: 290486px;
   margin-left: 4px;
   transition: all ease-in-out 0.15s;
@@ -117,7 +132,7 @@ b, strong {
   position: relative;
   background-image: linear-gradient(to right bottom, #719BA9, #587180, #2B3C4F);
   /*height: 760px;*/
-  height: 800px;
+  height: 900px;
   text-align: center;
   z-index: 0;
   transform: skewY(-6deg);
@@ -173,7 +188,9 @@ b, strong {
 .hire h2,
 .skills h2,
 .work-experience h2,
-.education h2 {
+.education h2,
+.character-references h2,
+.hire-banner h2 {
 	font-family: 'Josefin Sans', sans-serif;
 	text-transform: uppercase;
   font-weight: 600;
@@ -204,7 +221,7 @@ b, strong {
 }
 
 .about-me { 
-  padding-top: 150px;
+  padding-top: 180px;
   padding-bottom: 80px;
 }
 
@@ -268,14 +285,14 @@ b, strong {
   transform: translateY(-50%) translateX(-50%);
   background-color: #ffffff;
   padding: 10px 16px 5px;
-  border-radius: 8px;
+  border-radius: 4px;
   color: white;
   border: 2px solid #587180;
   background: #587180;
 }
 
 .skills .card {
-  border-radius: 8px;
+  border-radius: 4px;
   border: 2px solid #719BA9;
   padding-top: 24px;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
@@ -315,6 +332,145 @@ b, strong {
   transition: all ease-in-out 0.15s;
 }
 
+.character-references {
+  color: #587180;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  /*background-color: #f2f8fa;*/
+}
+
+.character-references .character {
+  padding-top: 4rem;
+}
+
+.character-references .card {
+  position: relative;
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+  transition: box-shadow .2s cubic-bezier(.4,0,1,1);
+  border: none;
+  width: 100%;
+}
+
+.character-references .card:hover {
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
+}
+
+.character-references .card:hover .profile-photo {
+  /*box-shadow: 0 0px 0px 0 rgba(0,0,0,.14), 0 -2px 4px 0 rgba(0,0,0,.2), 0 2px 4px -1px rgba(0,0,0,.2);*/
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.character-references .card .profile {
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.character-references .card .profile-photo {
+  width: 7rem;
+  height: 7rem;
+  overflow: hidden;
+  border-radius: 50%;
+  position: relative;
+  background-color: white;
+  border: 5px solid #587180;
+  transition: box-shadow .2s cubic-bezier(.4,0,1,1);
+}
+
+.character-references .profile-photo img {
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.character-references .card .card-body {
+  padding-top: 4rem;
+}
+
+.character-references .card .card-body .subtitle {
+  color: #719BA9;
+}
+
+
+.character-references .card .card-body p {
+  opacity: 0.8;
+  color: #719BA9;
+  font-size: 14px;
+}
+
+.hire-banner {
+  padding-top: 100px;
+  color: #587180; 
+}
+
+.hire-banner .card {
+  border: none;
+  border-radius: 0px;
+}
+
+.hire-banner  {
+}
+
+.button--download {
+  background-color: #587180 !important;
+  color: white !important;
+  padding: .5rem 1rem;
+}
+
+.button--download.inverse {
+  background-color: white !important;
+  color: #587180 !important;
+}
+
+.button--email {
+  background-color: #53d769 !important;
+  color: white !important;
+  padding: .5rem 1rem;
+}
+
+.intro-banner .button--download.inverse {
+  background-color: transparent !important;
+  border: 3px solid white !important;
+  border-radius: 0px;
+  color: white !important;
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  padding: .5rem 1rem .35rem;
+}
+
+
+.intro-banner .button--download.inverse:hover {
+  color: #587180 !important;
+  background-color: white !important;
+}
+
+footer.footer {
+  color: rgba(255, 255, 255, 0.74);
+  background-color: #587180;
+  text-align: center;
+  padding: 1rem;
+  font-size: 14px;
+}
+
+.scroll--top {
+  background-color: #f2f8fa;
+  color: #587180 !important;
+  border: 1px solid rgba(113, 155, 169, 0.18);
+  position: fixed;
+  bottom: -50px;
+  right: 16px;
+  opacity: 0;
+  transition: all ease-in-out 0.35s;
+}
+
+.scroll--top.active {
+  bottom: 16px;
+  opacity: 1;
+}
 
 /** Small devices (landscape phones, 576px and up) **/
 @media (min-width: 576px) {
@@ -339,9 +495,9 @@ b, strong {
 }
 
 @media (max-width: 1199.98px) {
-  .intro-banner {
+  /*.intro-banner {
     height: 850px;
-  }
+  }*/
 
   .hire_image img {
     left: 50%;
@@ -380,7 +536,7 @@ b, strong {
   }
 
   .intro-banner .dev-image {
-    max-width: 75%;
+    max-width: 65%;
   }
 
   .work-experience {
@@ -413,7 +569,7 @@ b, strong {
     width: 90%;
     height: 200px;
     position: absolute;
-    border-radius: 8px;
+    border-radius: 4px;
     background-position-y: 25%;
     transform: translate(-50%, -50%);
     box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
@@ -450,6 +606,10 @@ b, strong {
 }
 
 @media (max-width: 575.98px) {
+  .intro-banner {
+    height: 750px;
+  }
+
   .hire_image img {
     height: 10rem;
   }
@@ -488,8 +648,13 @@ b, strong {
   .hire h2,
   .skills h2,
   .work-experience h2,
-  .education h2 {
+  .education h2,
+  .character-references h2 {
     font-size: 1.75rem;
+  }
+
+  .hire-banner .button--download, .hire-banner .button--email {
+    width: 100%;
   }
 }
 
