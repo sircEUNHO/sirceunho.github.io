@@ -49,7 +49,7 @@ b, strong {
   width: 2.5rem;
   line-height: 2.5rem;
   padding: 0px !important;
-  border-radius: 290486px;
+  border-radius: 290486px !important;
   margin-left: 4px;
   transition: all ease-in-out 0.15s;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
@@ -151,7 +151,7 @@ b, strong {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-image: url('../images/charles-pjAH2Ax4uWk-unsplash.jpg');
+  background-image: url('../images/coding.jpg');
   background-attachment: fixed;
   /*background:*//*
   background: transparent;*/ 
@@ -237,12 +237,12 @@ b, strong {
 }
 
 .about-me .blockquote {
-  color: #719BA9;
+  color: #5D7A88;
 }
 
 .about-me .blockquote-footer {
   color: inherit;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .hire {
@@ -398,7 +398,6 @@ b, strong {
 
 .character-references .card .card-body p {
   opacity: 0.8;
-  color: #719BA9;
   font-size: 14px;
 }
 
@@ -412,13 +411,11 @@ b, strong {
   border-radius: 0px;
 }
 
-.hire-banner  {
-}
-
 .button--download {
   background-color: #587180 !important;
   color: white !important;
   padding: .5rem 1rem;
+  border-radius: 0px;
 }
 
 .button--download.inverse {
@@ -427,9 +424,10 @@ b, strong {
 }
 
 .button--email {
-  background-color: #53d769 !important;
+  background-color: #348441!important;
   color: white !important;
   padding: .5rem 1rem;
+  border-radius: 0px;
 }
 
 .intro-banner .button--download.inverse {
@@ -449,7 +447,7 @@ b, strong {
 }
 
 footer.footer {
-  color: rgba(255, 255, 255, 0.74);
+  color: rgba(255, 255, 255, 1);
   background-color: #587180;
   text-align: center;
   padding: 1rem;
